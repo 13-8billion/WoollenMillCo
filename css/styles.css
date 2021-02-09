@@ -1,0 +1,270 @@
+/* AUTHOR @ Juliana Virgilio*/
+/*
+COLOR PALETTE
+https://coolors.co/FFFFFF-000004-011936-EDE0D4-766C7F
+#FFFFFF -  white
+#000004 - Black
+#011936 - Oxford Blue
+#EDE0D4 - Almond
+#766C7F - Old Lavander
+*/
+
+
+/* Global styles
+------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+
+body {
+  color: #000004;
+  margin: 0;
+  padding: 0;
+  font-family: "Palatino Linotype", "Book Antiqua", serif;
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+a:hover {
+  text-decoration: none;
+}
+.content-wrap {
+  max-width: 900px;
+  /* width: 95%; */
+  margin: 0 auto;
+  padding: 60px 0;
+  padding-left: 3%;
+}
+.divider > section {
+  border-bottom: 1px dashed #000004;
+  padding: 25px 0;
+  list-style: none; /*removes bullets from the list*/
+}
+.divider > section:last-of-type {
+  border-bottom: none;
+}
+
+
+/* Product
+------------------------------------*/
+.products {
+  background: #FFFFFF;
+  padding-bottom: 15%;
+  padding-top: 10%;
+  font-size: 110%
+}
+.products a {
+  color: #011936;
+  display: block; /*fills up the entire list item and makes the whole area clickable*/
+  text-decoration: none; /*removes the underline from the anchor*/ 
+  font-weight: bold;
+  color: black; 
+}
+
+.product-item {
+  overflow: hidden;
+}
+.product-item h3 {
+  margin-top: 0;
+}
+
+.product-img {
+  float:left;
+  display:inline; 
+  width: auto;
+  list-style: none;
+
+}
+.product-desc {
+  float:left;
+  display:inline; 
+  width: 51%;
+  list-style: none;
+  color: black;
+  font-family: "Palatino Linotype", "Book Antiqua", serif;
+  font-size:100%; 
+  text-align: justify; /*justified text to it takes up and equal amount of the page */
+
+}
+
+.tumble-img {
+  float:left;
+  display:inline; 
+  width: 13%;
+  list-style: none;
+  size: 100px;
+
+}
+.tumble-img a {
+  display: block; /*fills up the entire list item and makes the whole area clickable*/
+  text-decoration: none; /*removes the underline from the anchor*/ 
+  font-weight: bold;
+  color: black;
+}
+/* Closable button inside the expanded image */
+.closebtn {
+  position:relative;
+  color: transparent;
+  font-size: 0px;
+}
+/* Home
+------------------------------------*/
+.home {
+  background: #FFFFFF;
+  margin-left: 5%;
+  font-family: "Palatino Linotype", "Book Antiqua", serif;
+  font-size: x-large;
+}
+
+.home-img-left {
+  float:left;
+  display:inline; 
+  width: auto;
+  list-style: none;
+
+}
+.home-desc-left {
+  float:left;
+  display:inline; 
+  width: 50%;
+  list-style: none;
+  font-size:70%; /*smaller looks more spohpisticaed(?)*/
+  text-align: justify; /*justified text to it takes up and equal amount of the page */
+}
+
+/* Slideshow container */
+.slideshow-container {
+  /* max-width: 1000px; */
+  position: unset;
+  margin-top: 9%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  margin:initial;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/******** OUR STORY ********/
+
+/*headers*/
+#h, #h3, #h4, #h5{
+  background-color: #9C91A1;
+  font-style: italic;
+  text-align:left;
+  font-size:120%;
+  }
+
+/******** HOME PAGE *******/
+#h6, #h7{
+  background-color: #9C91A1;
+  font-style: italic;
+  text-align:left;
+  }
+
+  #h6 a{
+  text-decoration: none;
+  color:black;
+  }
+
+  #h8{
+  background-color: #9C91A1;
+  font-style: italic;
+  text-align:left;
+  font-size:100%;
+  margin-left:40%;
+  }
+
+
+/****** product details headers*******/
+
+#h9, #h10, #h11{
+  background-color: #9C91A1;
+  font-style: italic;
+  font-size:120%;
+  margin-left:5.5%;
+}
+
+/* Media queries for responsiviness */
+@media screen and (max-width: 1060px){
+  #primary {width: 67%;}
+  #secondary {width: 30%; margin-left: 3%;}
+}
+
+@media(min-device-width:800px){
+  img[data-src-800p]{
+    content: attr(data-src-800px, url);
+  }
+}
+
+@media screen and (max-width: 768px){
+  #primary {width: 100%;}
+  #secondary {width: 100%; margin: 0%; border: none;}
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media(min-device-width:600px){
+  img[data-src-600p]{
+    content: attr(data-src-600px, url);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+/* @media (min-width:640px){body {font-size: 1rem;}}
+@media (min-width:960px){body {font-size: 1.2rem;}}
+@media (min-width:1100px){body {font-size: 1.5rem;}} */
